@@ -87,7 +87,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text('Fetch Podcast Listing JSON'),
         ),
-        body: Center(
+        body: SingleChildScrollView(
           child: FutureBuilder<PodCastIndex>(
             future: futurePodCastIndex,
             builder: (context, snapshot) {
