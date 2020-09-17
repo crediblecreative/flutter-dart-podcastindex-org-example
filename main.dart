@@ -55,7 +55,6 @@ class PodCastIndex {
 
   factory PodCastIndex.fromJson(Map<String, dynamic> json) {
     debugPrint(json.toString());
-    //return PodCastIndex(foo: json['query']);
     return PodCastIndex(content: json.toString());
   }
 }
@@ -94,7 +93,7 @@ class _MyAppState extends State<MyApp> {
             future: futurePodCastIndex,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                return Text(snapshot.data.foo);
+                return Text(snapshot.data.content);
               } else if (snapshot.hasError) {
                 return Text("${snapshot.error}");
               }

@@ -7,7 +7,9 @@ This is an example of how to connect to the podcastindex.org API using Flutter/D
 
     3) Replace the pubspec.yaml file with the new version from this repo (this handles package dependencies)
 
-    4) Replace the /android/app/src/main/AndroidManifest.xml with the new version from this repo (this contains the permission necessary for the app to access the internet from an Android emulator)
+    4) If you're building an Android client, replace the /android/app/src/main/AndroidManifest.xml with the new version from this repo (this contains the permission necessary for the app to access the internet from an Android emulator). 
+    
+    5) Be sure to change the values CHANGE_TO_APP_NAME in AndroidManifest.xml to match your app's name. If you created the app with the command 'flutter create my_podcast_index_client' change the values to my_podcast_index_client.
 
 ## Potential Issues
 
