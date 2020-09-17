@@ -3,7 +3,7 @@ This is an example of how to connect to the podcastindex.org API using Flutter/D
 
     1) Replace the Flutter app's auto-generated lib/main.dart with the new version from this repo
 
-    2) Update the lib/main.dart file with  your API key and API secret
+    2) Update the lib/main.dart file with  your API key and API secret. If either your API key or API secret contain dollar signs ($) escape them with backslashed (\$).
 
     3) Replace the pubspec.yaml file with the new version from this repo (this handles package dependencies)
 
