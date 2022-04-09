@@ -33,7 +33,7 @@ Future<PodCastIndex> fetchPodCastIndex() async {
   };
 
   final response = await http.get(
-      'https://api.podcastindex.org/api/1.0/search/byterm?q=bastiat',
+      Uri.parse('https://api.podcastindex.org/api/1.0/search/byterm?q=bastiat'),
       headers: headers);
 
   if (response.statusCode == 200) {
